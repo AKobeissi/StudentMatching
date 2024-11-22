@@ -22,7 +22,7 @@ st.subheader("Télécharger les données d'entrée")
 student_file = st.file_uploader("Télécharger le fichier des étudiants (CSV ou Excel)", type=["csv", "xls", "xlsx"])
 host_file = st.file_uploader("Télécharger le fichier des hôtes (CSV ou Excel)", type=["csv", "xls", "xlsx"])
 
-API_URL = "http://34.213.59.35:8080/docs/optimize"  # Update with your deployed API URL
+API_URL = "http://34.213.59.35:8080/optimize"  # Update with your deployed API URL
 
 if student_file and host_file:
     if st.button("Lancer l'algorithme de jumelage"):
